@@ -3,9 +3,13 @@
  */
 
 var lrequire =  require('local-require');
-lrequire.registerSync('demo', {
-    '1.js' : './test/1.js',
-    'test1' : './test1'
+lrequire.registerSync({
+    namespace : 'demo',
+    basedir : __dirname,
+    config : {
+        '1.js': './test/1.js',
+        'test1': './test1'
+    }
 });
 
 
