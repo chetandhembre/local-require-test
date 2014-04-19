@@ -3,12 +3,16 @@
  */
 
 var lrequire =  require('local-require');
-lrequire.register('demo', {
+lrequire.registerSync('demo', {
     '1.js' : './test/1.js',
     'test1' : './test1'
-}, function(err) {
-    console.log(err);
-    require('demo/1.js');
-    console.log(require('demo/test1').test1());
 });
 
+
+exports.test = function() {
+    require('demo/1.js');
+};
+
+exports.test1 = function() {
+    require('demo/test1').test1();
+};

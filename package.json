@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/chetandhembre/local-require-test",
   "dependencies" : {
-      "local-require" : "git://github.com/chetandhembre/local-require.git#831d6aae5aea32c26b8be8b1aec3b7da274a7deb"
+      "local-require" : "git://github.com/chetandhembre/local-require.git#410b37908f35bc01b8918fc57d1ddf594d222bf7"
   }
 
 }
