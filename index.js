@@ -7,16 +7,13 @@ lrequire.registerSync({
     namespace : 'demo',
     basedir : __dirname,
     config : {
-        '1.js': './test/1.js',
-        'test1': './test1'
+        '2.js': './test2/2.js'
     }
 });
 
-
-exports.test = function() {
-    require('demo/1.js');
+var test = function() {
+    require('demo/2.js').test();
+    require('demo/2.js').test1();
 };
 
-exports.test1 = function() {
-    require('demo/test1').test1();
-};
+exports.test = test;
